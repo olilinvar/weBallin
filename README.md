@@ -2,39 +2,63 @@
 
 Dette er generell info om Oliver og Trygve sin årsoppgave
 
-## Tre tingene
+### Notat til lærer
+```Dette er en sammarbeidsoppgave```  
+```Vi ønsker å gjøre det velding enkelt for dere å se hvem som har jobbet med hva slik at dere kan gi en individell vurdering```
 
-Hva, Hvordan, Hvorfor
+## Hva
 
-### Hva
+Vi skal lage et 2D hack'n'slash plattformspill fra bunnen av, uten bruk av en eksisterende game engine. Vi skal implementere grafikk og vindushåndtering ved hjelp av bibliotekene OpenGL og GLFW.
 
-Vi skal lage et spill med C++.
+I tillegg til egenlaget kode vil vi være ansvarlige for det grafiske designet av alle visuelle elementer, inkludert animasjoner, sprites, karakterdesign og bakgrunnsdesign. Vi skal også skape lydeffekter og musikk for spillet.
 
-Dette spillet skal vi lage fra bunnen av uten en engine. Vi skal bruke bibloteker som OpenGL og GLFW for graffikk og window behandling. Sjangeren er en "2D hackandslash platformer"
+## Hvordan
 
-Det stopper ikke med egenlaget kode vi skal også stå for grafisk design av alle visuelle elementer eks. animasjoner, sprites, design av karakterer og design av bakgrunner. 
+Vi kommer til å følge en grundig planleggingsprosess ved å bruke et Github-prosjekt for å holde oversikt over fremdriften vår. Planen, veikartet og oppgavelisten vil være tilgjengelige på Github for en enkel og strukturert oversikt over prosjektet. I tillegg til Github vil vi ha minimum ett møte i uken for å diskutere fremdrift og eventuelle utfordringer.
 
-Vi skal også lage lydeffekter og musikk til spillet.
+Vi planlegger å bruke eksisterende biblioteker for de mest komplekse delene av koden, som vindushåndtering, inputhåndtering og grafikk. Disse bibliotekene vil bli implementert som en del av den større løsningen.
 
-### Hvordan
+For å sikre et et godt resultat vil vi gjennomføre dokumenterte brukertester senere i løpet.
 
-Med en plan.
+For å møte kravene i oppgaven vil spillet inkludere funksjonaliteter som lagring og muligens et ledertavlesystem som sporer tid brukt på hvert nivå.
 
-I mer detalj skal vi ha et Github prosjekt som vi skal følge opp tett. Her skal planleggingen, roadmappet og TODO listen være. Dette er en god ordning slik at vi får alt på et sted og dermer har god oversikt over årsoppgaven. Github er ikke nok til å holde styr på hvor vi ligger ann skal vi ha minimum et møte i uke hvor vi snakker om hvor vi ligger ann.
+## Hvorfor
 
-Til grafisk design skal vi bruke programmet Krita/Asperite som har god support for animasjon og sprites, med en stort felleskap av brukere.
+Vi ønsker å utvikle et engasjerende 2D spill for å vise våre ferdigheter innen C++-programmering, spillutvikling og grafisk design.
 
-Musikk og lydefekter skal vi lage med bfxr og LMMS.
+## Redskaper/Programvare/Biblioteker
 
-All koden skal ikke være laget av oss, det mest kompliserte delene som window management, kanskje input handling og grafikken skal være håndtert av forskjellige bibloteker. Disse biblotekene skal vi implementere i den større løsningen.
+- **Operativsystem:**
+  - Windows 10/11
+  - Debian (Linux)
 
-For at vi skal få et bra resultat skal vi ha dokumenterte brukertester.
+- **Programvare:**
+  - Krita og Aseprite for grafisk design
+  - bfxr og LMMS for musikk og lydeffekter
 
-For å møte alle kravene i oppgaven skal man ha muligheten for å lagre og kanskje gjøre slik at tiden du brukte på levelet havner på et ledertavle
+- **Biblioteker:**
+  - OpenGL for grafikk
+  - GLFW for vindushåndtering
 
-### Hvorfor
+### Databasesystem
+Vi ønsker å bruke MariaDB som databasesystem for lagring av spilldata
 
-## Redskaper/Programvare/Bibloteker
+## TODO (Forenklet)
+- [ ] Konfigurer nødvendige verktøy
+- [ ] Fikse vindushåndtering
+- [ ] Integrer OpenGL
+- [ ] Legg til spillomerådet og karakter
+- [ ] Implementer Bevegelseskontroller
+- [ ] Grafisk design
+- [ ] Spillmekanikker
+- [ ] Lyddesign
+- [ ] Databaseintegrering
+- [ ] Brukerteste
+- [ ] Finpusse og Fullfør
+
+### Annet
+- [ ] Nettside med download
+- [ ] FAQ
 
 
 ## Utviklet av
