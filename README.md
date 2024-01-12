@@ -44,6 +44,7 @@ Vi ønsker å utvikle et engasjerende 2D spill for å vise våre ferdigheter inn
 Vi ønsker å bruke MariaDB som databasesystem for lagring av spilldata
 
 ## TODO (Forenklet)
+- [x] Lage prosjektbeskrivelse
 - [ ] Konfigurer nødvendige verktøy
 - [ ] Fikse vindushåndtering
 - [ ] Integrer OpenGL
