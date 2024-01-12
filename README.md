@@ -4,13 +4,10 @@ Dette er generell info om Oliver og Trygve sin årsoppgave
 
 ### Notat til lærer
 
-```
 Dette er en sammarbeidsoppgave
-```
 
-```
 Vi ønsker å gjøre det velding enkelt for dere å se hvem som har jobbet med hva slik at dere kan gi en individell vurdering. Dette kommer med github om man velger et repo, trykker på "Insight" kommer man til en side der man for oversikt over hvor mange linjer kode forskjellige personer har skrevet.
-```
+
 
 ## Hva
 
