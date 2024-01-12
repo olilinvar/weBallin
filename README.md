@@ -41,7 +41,7 @@ Vi ønsker å utvikle et engasjerende 2D spill for å vise våre ferdigheter inn
   - GLFW for vindushåndtering
 
 ### Databasesystem
-Vi ønsker å bruke MariaDB som databasesystem for lagring av spilldata
+Vi ønsker å bruke MongoDB som databasesystem for lagring av spilldata
 
 ## TODO (Forenklet)
 - [x] Lage prosjektbeskrivelse
