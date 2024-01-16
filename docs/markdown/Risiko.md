@@ -1,3 +1,5 @@
+!Dette dokumentet skal endres til et enkelt diagram med hva som er mest sansynlig og hva som er mest farlig
+
 # Risiko
 
 I dette dokumentet gjennomgås det risikovurderinger og risikotiltakene for nevdte vurderinger
@@ -29,4 +31,8 @@ Vi har en database som lagrer brukerens tid på forskjellige nivåer. Brukeren s
 
 ### t(iltak)3
 
-Dette er nok den 
+Dette er nok den mist sansynlige av alle mulighetene, at det skjer en naturkatastrofe i Oslo hadde vært veldig usansynlig. Det kan hende men jeg tror ikke vi burde være klar med livbåt og redningsvest, alikevel har vi tiltak som backups som kan forebygge at vi taper alt i en naturkatastrofe situasjon.
+
+### t(iltak)4
+
+Tiltak nummer 4 er mye av det samme som den forige, vi kan nok ikke forebygge situasjoner hvor maskinen vi utvikler på går tapt. Det vi kan forebygge er at vi taper data etter at vi har lastet det opp. Vi laster det meste opp til Github slik at vi kan sikre oss at vi ikke taper noe, Github kan gå ned men med tanke på at det ikke har skjedd de siste [x] årene tror vi ikke at det skjer nå.
