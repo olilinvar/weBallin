@@ -9,7 +9,6 @@ Dette er en sammarbeidsoppgave
 
 Vi ønsker å gjøre det velding enkelt for dere å se hvem som har jobbet med hva slik at dere kan gi en individell vurdering. Dette kommer med github om man velger et repo, trykker på "Insight" kommer man til en side der man for oversikt over hvor mange linjer kode forskjellige personer har skrevet.
 
-
 ## Hva
 
 Vi skal lage et 2D hack'n'slash plattformspill fra bunnen av, uten bruk av en eksisterende game engine. Vi skal implementere grafikk og vindushåndtering ved hjelp av bibliotekene OpenGL og GLFW.
@@ -56,6 +55,8 @@ Utenom det vil vi også lære om conteinere.
 
 ### Databasesystem
 Vi ønsker å bruke MongoDB som databasesystem for lagring av spilldata
+
+<!--Dette trenger vi ikke gjøre veldig detaljert, men kan utvides-->
 
 ### TODO (Forenklet)
 ## Spill
