@@ -4,4 +4,4 @@ project(Project_Name VERSION 1.0)
 
 add_executable()
 
-add_subdirectory()
+add_subdirectory(src/)
