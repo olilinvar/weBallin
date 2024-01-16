@@ -77,11 +77,7 @@ Vi ønsker å bruke MongoDB som databasesystem for lagring av spilldata
 - [ ] Konfigurere Nginx container 
   - [ ] Konfigurere database
 - [ ] Lage nettsiden
-
-### Annet (Veldig forenklet)
-- [ ] Nettside med download
-- [ ] FAQ
-
+    - [ ] FAQ side
 
 ## Utviklet av
 

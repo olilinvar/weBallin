@@ -1,5 +1,7 @@
-cmake_minimum_required(VERSION 3.28.1)
+cmake_minimum_required(VERSION 3.0.0)
 
-project()
+project(Project_Name VERSION 1.0)
 
 add_executable()
+
+add_subdirectory()
