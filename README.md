@@ -39,9 +39,20 @@ Utenom det vil vi også lære om conteinere.
 
 ## Redskaper/Programvare/Biblioteker
 
+### Tabell 
+
+|Program/Tjeneste type|Program/Tjeneste navn|hvorfor denne?|
+|---------------------|---------------------|--------------|
+|Operativsystem       | Nginx (container)   |
+
+|Operativsystemer|Programvare|Bibloteker|
+|----|----|----|
+|Windows 11|Visual Studio Code| |
+|Windows 10| | |
+|Nginx (container)| | |
+
 - **Operativsystem:**
   - Windows 10/11
-  - Debian (Linux)
   - Nginx (container)
 
 - **Programvare:**
