@@ -12,7 +12,11 @@ project
 set(EXECUTABLE_NAME "${PROJECT_NAME}_${VERSION}")
 
 # Compilerer alle 
-add_executable(${EXECUTABLE_NAME} ) 
+add_executable(
+    ${EXECUTABLE_NAME}
+    
+    src/window/window.cpp
+    ) 
 
 # vet ikke om begge virker
 target_link_directories()
