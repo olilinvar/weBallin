@@ -1,21 +1,24 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(Project_Name VERSION 1.0)
-
-set(SOURCES
-    src/window/window.cpp    
+project
+(
+    PROJECT_NAME 
+    VERSION 1.0
+    LANGUAGE CXX
 )
 
-set(EXECUTABLE_NAME "GAMING_${PROJECT_VERSION}")
+# Setter navnet på exe filen til navnet og versionen
+# eks. PROJECT1.0
+set(EXECUTABLE_NAME "${PROJECT_NAME}_${VERSION}")
 
-add_executable(${EXECUTABLE_NAME} ${SOURCES})
+# Compilerer alle 
+add_executable(${EXECUTABLE_NAME} ) 
 
-# SFML bullshit GO!
+# vet ikke om begge virker
+target_link_directories()
 
-set(SFML_DIR "C:/SFML-2.6.1/lib/cmake/SFML")
+# Skriv alle biblotekene manuelt
+target_link_libraries()
 
-find_package(SFML 2.6 COMPONENTS graphics window system REQUIRED)
-
-find_package(SFML COMPONENTS system window graphics REQUIRED)
-
-# SFML bullshit END!
+# bare til /include/ dir
+include_directories()
