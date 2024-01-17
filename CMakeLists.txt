@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.28)
 
 project
 (
@@ -8,21 +8,42 @@ project
 )
 
 # Setter navnet på exe filen til navnet og versionen
-# eks. PROJECT1.0
+# eks. PROJECT_1.0
 set(EXECUTABLE_NAME "${PROJECT_NAME}_${VERSION}")
 
-# Compilerer alle 
-add_executable(
-    ${EXECUTABLE_NAME}
-    
-    src/window/window.cpp
-    ) 
+set
+(
+    SOURCES
+    src/
+    # Må linke til alle individuelt
+)
+
+# Hva skal bli til exe-en? 
+add_executable(${EXECUTABLE_NAME} $(SOURCES)) 
 
 # vet ikke om begge virker
-target_link_directories()
+target_link_directories
+(
+    ${EXECUTABLE_NAME} PRIVATE
+
+    lib/sfml/
+)
 
 # Skriv alle biblotekene manuelt
-target_link_libraries()
+target_link_libraries
+(
+    ${EXECUTABLE_NAME} PRIVATE
+
+    lib/sfml/sfml-audio.lib
+    lib/sfml/sfml-graphics.lib
+    lib/sfml/sfml-network.lib
+    lib/sfml/sfml-system.lib
+    lib/sfml/sfml-window.lib
+)
 
 # bare til /include/ dir
-include_directories()
+include_directories(
+    ${EXECUTABLE_NAME} PRIVATE
+
+    include/sfml
+)

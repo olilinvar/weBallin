@@ -39,33 +39,27 @@ Utenom det vil vi også lære om conteinere.
 
 ## Redskaper/Programvare/Biblioteker
 
-### Tabell 
-
-|Program/Tjeneste type|Program/Tjeneste navn|hvorfor denne?|
-|---------------------|---------------------|--------------|
-|Operativsystem       | Nginx (container)   |
-
-|Operativsystemer|Programvare|Bibloteker|
-|----|----|----|
-|Windows 11|Visual Studio Code| |
-|Windows 10| | |
-|Nginx (container)| | |
+<!-- a b c d e f g h i j k l m n o p q r s t u v w x y z -->
 
 - **Operativsystem:**
-  - Windows 10/11
-  - Nginx (container)
+  - Nginx (container)   - Hoste nettside og database
+  - Windows 10/11       - Utviklingsplatform
 
 - **Programvare:**
-  - Krita og Aseprite for grafisk design
-  - bfxr og LMMS for lydeffekter og mussik
-  - Podman for håndtering av containere
+  - Aseprite            - Grafisk design
+  - bfxr                - Lydeffekter
+  - CMake               - Bygging og kompilering
+  - Krita               - Grafisk design
+  - LMMS                - Lydeffekter og mussik
+  - Podman              - Containere
+  - Visual Stduio Code  - IDE
 
 - **Biblioteker:**
-  - OpenGL for grafikk
-  - GLFW for vindushåndtering
+  - OpenGL              - Grafikk
+  - SFML                - Håndtering av vinduer, lyd og input
 
-### Databasesystem
-Vi ønsker å bruke MongoDB som databasesystem for lagring av spilldata
+-  **Databasesystem**
+  - MongoDB             - Database
 
 <!--Dette trenger vi ikke gjøre veldig detaljert, men kan utvides-->
 
