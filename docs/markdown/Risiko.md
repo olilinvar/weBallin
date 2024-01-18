@@ -8,8 +8,8 @@ I prosjektet er det ikke mange risikoer siden det er ment til å være open sour
 
 Videre er to tabeller først hva som definerer de forskjellige risikonivåene. Så er det en kategorisert tabell over de forskjellige svakhetene i løsningen.
 
-|                          |**Lav Alvorlighet**  |**Medium Alvorlighet**  |**Høy Alvorlighet**  |
-|:------------------------:|:-------------------:|:----------------------:|:-------------------:|
+|                      |**Lav Alvorlighet**  |**Medium Alvorlighet**  |**Høy Alvorlighet**  |
+|:--------------------:|:-------------------:|:----------------------:|:-------------------:|
 | **Lav Sannsynlighet**|[Risikonivå 1](#risikonivå-1)|[Risikonivå 2](#risikonivå-2)| [Risikonivå 3](#risikonivå-3)|
 | **Medium Sannsynlighet**|[Risikonivå 2](#risikonivå-2)| [Risikonivå 4](#risikonivå-4)| [Risikonivå 5](#risikonivå-5)|
 | **Høy Sannsynlighet**|[Risikonivå 3](#risikonivå-3)| [Risikonivå 5](#risikonivå-5)| [Risikonivå 6](#risikonivå-6)|
@@ -17,6 +17,8 @@ Videre er to tabeller først hva som definerer de forskjellige risikonivåene. S
 ## Risikonivå og Tiltak
 
 ### Risikonivå 1
+
+Nivå 1 er risikoer
 
 ### Risikonivå 2
 
