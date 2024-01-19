@@ -11,7 +11,9 @@
 
 ## Hva gjør lovene
 
-åndsverk		    - Beskytter det du har laget
-personvern 		    - Beskytter personværnet til en privatperson
-GDPR			    - Beskytter dataen til privat preson
-Universellutforming	- Passer på at alle selv funksjonsenve kan bruke servicen din
+| Lov                        | Beskyttelse                                        |
+|----------------------------|----------------------------------------------------|
+| Åndsverksloven             | Beskytter det du har laget                         |
+| Personvernsloven           | Beskytter personvernet til en privatperson         |
+| GDPR                       | Beskytter dataen til privat person                 |
+| Lov om Universell utforming | Passer på at alle, selv funksjonshemmede, kan bruke servicen din |
