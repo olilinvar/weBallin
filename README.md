@@ -1,4 +1,3 @@
-
 # Årsoppgave Våren 2024
 
 Dette er generell info om Oliver og Trygve sin årsoppgave
@@ -84,7 +83,7 @@ Utenom det vil vi også lære om conteinere.
 - [ ] Konfigurere Nginx container 
   - [ ] Konfigurere database
 - [ ] Lage nettsiden
-    - [ ] FAQ side
+  - [ ] FAQ side
 
 ## Utviklet av
 

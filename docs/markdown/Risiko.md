@@ -16,6 +16,23 @@ Videre er to tabeller først hva som definerer de forskjellige risikonivåene. S
 
 ## Risikonivå og Tiltak
 
+### Risikotabell
+
+|**Programvare**|**Risikonivå**    |**Risikotype**         |
+|:-------------:|:----------------:|:---------------------:|
+|Asperite       |[1](#risikonivå-1)|[Fratatt](#fratatt)    |
+|bfxr           |[2](#risikonivå-2)|[Oppdatering](#Oppdatering)|
+|CMake          |[2](#risikonivå-2)|[Oppdatering](#oppdatering)|
+|Krita          |[2](#risikonivå-2)|[Oppdatering](#oppdatering)|
+|LMMS           |[2](#risikonivå-2)|[Oppdatering](#oppdatering)|
+|Podman         |[2](#risikonivå-2)|[Oppdatering](#oppdatering)|
+|Visual Studio Code|[1](#Risikonivå-1)|[Oppdatering](#Oppdatering)|
+
+|**Programvare**|**Risikonivå**    |**Risikotype**         |
+|:-------------:|:----------------:|:---------------------:|
+
+
+
 ### Risikonivå 1
 
 Nivå 1 er risikoer
@@ -29,3 +46,11 @@ Nivå 1 er risikoer
 ### Risikonivå 5
 
 ### Risikonivå 6
+
+## Risikotype
+
+Med risikotype så betyr det den mest sansynlige for gitt programvare slik at det kan sakke ned 
+
+### Oppdatering
+
+### Fratatt

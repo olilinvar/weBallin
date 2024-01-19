@@ -7,9 +7,10 @@ project
     LANGUAGE CXX
 )
 
-# Setter navnet på exe filen til navnet og versionen
-# eks. PROJECT_1.0
 set(EXECUTABLE_NAME "${PROJECT_NAME}_${VERSION}")
+
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+#option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
 set
 (
