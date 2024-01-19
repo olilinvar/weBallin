@@ -10,8 +10,6 @@ Vi ønsker å gjøre det velding enkelt for dere å se hvem som har jobbet med h
 
 ## Hva
 
-Vi skal lage et 2D hack'n'slash plattformspill fra bunnen av, uten bruk av en eksisterende game engine. Vi skal implementere grafikk og vindushåndtering ved hjelp av bibliotekene OpenGL og GLFW.
-
 I tillegg til egenlaget kode vil vi være ansvarlige for det grafiske designet av alle visuelle elementer, inkludert animasjoner, sprites, karakterdesign og bakgrunnsdesign. Vi skal også skape lydeffekter og musikk for spillet.
 
 Dette skal komme med en nettside for å laste ned spillet.
@@ -24,9 +22,7 @@ Vi planlegger å bruke eksisterende biblioteker for de mest komplekse delene av 
 
 For å sikre et et godt resultat vil vi gjennomføre dokumenterte brukertester senere i løpet.
 
-Oppgaven stiller med mange krav, for å nå disse skal vi ha funksjonaliteter som lagring og et ledertavlesystem som sporer tid brukt på hvert nivå. I tilleg skal vi ha en nettside hvor man kan laste ned en exe fil av spillet og da logge inn på siden for å så se din egen poengsum og tid (usikkert).
-
-Denne nettsiden skal kjøre på en podman container med Nginx og en Database.
+Oppgaven stiller med mange krav, for å nå disse skal vi ha funksjonaliteter som lagring og et ledertavlesystem som sporer tid brukt på hvert nivå. I tilleg skal vi ha en nettside hvor man kan laste ned en exe fil av spillet og da logge inn på siden for å så se din egen poengsum og tid (usikkert). Denne nettsiden skal kjøre på en podman container med Nginx og en Database.
 
 For å beskytte vårt håndsverk, men fortsatt gjøre det tilgjengelig å modifisere og endre for en selv kommer vi til å legge verke vårt under et lisens.
 

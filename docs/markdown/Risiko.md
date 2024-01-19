@@ -8,7 +8,7 @@ I prosjektet er det ikke mange risikoer siden det er ment til å være open sour
 
 Videre er to tabeller først hva som definerer de forskjellige risikonivåene. Så er det en kategorisert tabell over de forskjellige svakhetene i løsningen.
 
-|                      |**Lav Alvorlighet**  |**Medium Alvorlighet**  |**Høy Alvorlighet**  |
+|     |**Lav Alvorlighet**  |**Medium Alvorlighet**  |**Høy Alvorlighet**  |
 |:--------------------:|:-------------------:|:----------------------:|:-------------------:|
 | **Lav Sannsynlighet**|[Risikonivå 1](#risikonivå-1)|[Risikonivå 2](#risikonivå-2)| [Risikonivå 3](#risikonivå-3)|
 | **Medium Sannsynlighet**|[Risikonivå 2](#risikonivå-2)| [Risikonivå 4](#risikonivå-4)| [Risikonivå 5](#risikonivå-5)|
@@ -17,6 +17,11 @@ Videre er to tabeller først hva som definerer de forskjellige risikonivåene. S
 ## Risikonivå og Tiltak
 
 ### Risikotabell
+
+|**Bibloteker** |**Risikonivå**    |**Risikotype**         |
+|:-------------:|:----------------:|:---------------------:|
+|OpenGL         |[1](#risikonivå-1)|[Fratatt](#fratatt)    |
+|SFML           |[2](#oppdatering) |[Oppdatering](#Oppdatering)|
 
 |**Programvare**|**Risikonivå**    |**Risikotype**         |
 |:-------------:|:----------------:|:---------------------:|
@@ -28,10 +33,10 @@ Videre er to tabeller først hva som definerer de forskjellige risikonivåene. S
 |Podman         |[2](#risikonivå-2)|[Oppdatering](#oppdatering)|
 |Visual Studio Code|[1](#Risikonivå-1)|[Oppdatering](#Oppdatering)|
 
-|**Programvare**|**Risikonivå**    |**Risikotype**         |
-|:-------------:|:----------------:|:---------------------:|
-
-
+|**Operatisystem**|**Risikonivå**    |**Risikotype**             |
+|:---------------:|:----------------:|:-------------------------:|
+|Nginx            |[2](#Oppdatering) |[Oppdatering](#Oppdatering)|
+|Windows 10       |[1](#oppdatering) |[Oppdatering](#oppdatering)|
 
 ### Risikonivå 1
 
