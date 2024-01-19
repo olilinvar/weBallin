@@ -1,80 +1,28 @@
-cmake_minimum_required(VERSION 3.16)
-project(CMakeSFMLProject LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.28)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
+project(PROJECT_NAME VERSION 1.0 LANGUAGES CXX)
 
-include(FetchContent)
-FetchContent_Declare(SFML
-    GIT_REPOSITORY https://github.com/SFML/SFML.git
-    GIT_TAG 2.6.x)
-FetchContent_MakeAvailable(SFML)
+set(EXECUTABLE_NAME "${PROJECT_NAME}_${VERSION}")
 
-add_executable(CMakeSFMLProject src/window/window.cpp)
-target_link_libraries(CMakeSFMLProject PRIVATE sfml-window)
-target_compile_features(CMakeSFMLProject PRIVATE cxx_std_17)
 
-if(WIN32)
-    add_custom_command(
-        TARGET CMakeSFMLProject
-        COMMENT "Copy OpenAL DLL"
-        PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SFML_SOURCE_DIR}/extlibs/bin/$<IF:$<EQUAL:${CMAKE_SIZEOF_VOID_P},8>,x64,x86>/openal32.dll $<TARGET_FILE_DIR:CMakeSFMLProject>
-        VERBATIM)
-endif()
+add_executable(${EXECUTABLE_NAME}) 
 
-install(TARGETS CMakeSFMLProject)
+target_sources(${EXECUTABLE_NAME} PRIVATE 
+    src/window/window.cpp
+)
+
+target_include_directories(${EXECUTABLE_NAME} PRIVATE include/sfml)
+
+target_compile_features(${EXECUTABLE_NAME} PRIVATE cxx_std_17)
+
+target_link_libraries(${EXECUTABLE_NAME} PRIVATE lib/sfml/sfml-graphics lib/sfml/sfml-window)
+
+#C:\Users\xxxxxx\Onedrive\Dokumenter\weBallin\lib\sfml\sfml-system.lib
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#cmake_minimum_required(VERSION 3.28)
-#
-#project(PROJECT_NAME 
-#    VERSION 1.0
-#    LANGUAGES CXX
-#)
-#
-#set(EXECUTABLE_NAME "${PROJECT_NAME}_${VERSION}")
-#
-#set(SOURCES
-#    src/window/window.cpp
-#)
-#
-#add_executable(${EXECUTABLE_NAME} ${SOURCES}) 
-#
 #target_link_directories(
 #    ${EXECUTABLE_NAME} PRIVATE
 #
