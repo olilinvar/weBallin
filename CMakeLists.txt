@@ -36,10 +36,6 @@ install(TARGETS CMakeSFMLProject)
 
 
 
-
-
-
-
 #cmake_minimum_required(VERSION 3.28)
 #
 #project(PROJECT_NAME VERSION 1.0 LANGUAGES CXX)

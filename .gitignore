@@ -1,2 +1,2 @@
-# Kanskje ignorer filer som starter med ~*
-#~*
+build/
+.gitignore
