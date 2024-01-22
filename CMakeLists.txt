@@ -1,60 +1,29 @@
 cmake_minimum_required(VERSION 3.16)
-project(CMakeSFMLProject LANGUAGES CXX)
+project(SFMLOpenGLProject)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
+# Set the path to SFML
+set(SFML_DIR "SFML-2.6.1-windows-vc17-64-bit/SFML-2.6.1/lib/cmake/SFML")
 
-include(FetchContent)
-FetchContent_Declare(SFML
-    GIT_REPOSITORY https://github.com/SFML/SFML.git
-    GIT_TAG 2.6.x)
-FetchContent_MakeAvailable(SFML)
+# Find SFML components
+find_package(SFML COMPONENTS system window graphics REQUIRED)
 
-add_executable(CMakeSFMLProject src/window/window.cpp)
-target_link_libraries(CMakeSFMLProject PRIVATE sfml-graphics)
-target_compile_features(CMakeSFMLProject PRIVATE cxx_std_17)
+# Find OpenGL
+find_package(OpenGL REQUIRED)
 
-if(WIN32)
-    add_custom_command(
-        TARGET CMakeSFMLProject
-        COMMENT "Copy OpenAL DLL"
-        PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SFML_SOURCE_DIR}/extlibs/bin/$<IF:$<EQUAL:${CMAKE_SIZEOF_VOID_P},8>,x64,x86>/openal32.dll $<TARGET_FILE_DIR:CMakeSFMLProject>
-        VERBATIM)
-endif()
+# Add your source files
+set(SOURCES
+    src/window/window.cpp
+    # Add your other source files here
+)
 
-install(TARGETS CMakeSFMLProject)
+# Create the executable
+add_executable(${PROJECT_NAME} ${SOURCES})
 
+# Link SFML libraries
+target_link_libraries(${PROJECT_NAME} PRIVATE sfml-system sfml-window sfml-graphics)
 
+# Link OpenGL
+target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL::GL)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#cmake_minimum_required(VERSION 3.28)
-#
-#project(PROJECT_NAME VERSION 1.0 LANGUAGES CXX)
-#
-#set(EXECUTABLE_NAME "${PROJECT_NAME}_${VERSION}")
-#
-#
-#add_executable(${EXECUTABLE_NAME}) 
-#
-#target_sources(${EXECUTABLE_NAME} PRIVATE 
-#    src/window/window.cpp
-#)
-#
-#target_include_directories(${EXECUTABLE_NAME} PRIVATE include/sfml)
-#
-#target_compile_features(${EXECUTABLE_NAME} PRIVATE cxx_std_17)
-#
-#target_link_libraries(${EXECUTABLE_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/lib/sfml/sfml-graphics.lib ${CMAKE_SOURCE_DIR}/lib/sfml/sfml-window.lib)
+# Set C++ standard
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
