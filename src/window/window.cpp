@@ -1,42 +1,53 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <filesystem>
 
-int main() {
-    // Create a window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML Window");
+int main()
+{
+    // Create the window
+    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML Image Example");
 
-    // Load the texture from a 32x32 PNG file
+    // Load the image
     sf::Texture texture;
-    if (!texture.loadFromFile("../../")) {
-        // Handle loading error
-        return 1;
+    if (!texture.loadFromFile("C:/Projects/weBallin/art/oss_rn.png"))
+    {
+        // Handle error if the image file cannot be loaded
+        std::filesystem::path currentPath = std::filesystem::current_path();
+
+        // Print the current working directory
+        std::cout << "Current Working Directory: " << currentPath << std::endl;
+
     }
 
-    // Create a sprite with the loaded texture
+    // Create a sprite and set its texture
     sf::Sprite sprite(texture);
-    // Set the position of the sprite
-    sprite.setPosition(400.f, 300.f); // Center of the window
 
-    // Main loop
-    while (window.isOpen()) {
-        // Process events
+    sprite.setScale(16.0f, 8.0f);
+
+    texture.setSmooth(true);
+
+    // Run the program as long as the window is open
+    while (window.isOpen())
+    {
+        // Check all the window's events that were triggered since the last iteration of the loop
         sf::Event event;
-        while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed) {
-                // Close the window if the close button is clicked
+        while (window.pollEvent(event))
+        {
+            // "Close requested" event: close the window
+            if (event.type == sf::Event::Closed)
+            {
                 window.close();
             }
         }
 
-        // Clear the window
-        window.clear();
+        // Clear the window with black color
+        window.clear(sf::Color::Black);
 
-        // Draw the sprite
+        // Draw the sprite (your image)
         window.draw(sprite);
 
-        // Display the contents of the window
+        // End the current frame
         window.display();
     }
-
     return 0;
 }
