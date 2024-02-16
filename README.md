@@ -10,7 +10,7 @@ Vi ønsker å gjøre det veldig enkelt for dere å se hvem som har jobbet med hv
 
 ## Hva
 
-Nettisde som er fiktivt relatert til et spill. På denne nettsiden skal man kunne logge inn for å se og redigere brukerprofil, hvor brukeren da er linket til noen highscores som også skal kunne slettes. Det skal ha en REST API backend som er skrevet i Rust og frontenden er skrevet i react. Om vi har tid til overs skal vi begynne utvikling på nevdt spill.
+Vi skal lage en nettside som er knyttet til et spill og skal gir brukere muligheten til å logge inn for å se og redigere sin brukerprofil. Profilen er også tilknyttet highscores som brukeren kan slette. Nettstedet har en backend basert på REST API skrevet i Rust, mens frontenden er utviklet i React. Hvis vi har ekstra tid, vil vi også starte utviklingen av selve spillet.
 
 ## Hvordan
 
