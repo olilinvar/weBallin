@@ -10,7 +10,7 @@ Vi ønsker å gjøre det veldig enkelt for dere å se hvem som har jobbet med hv
 
 ## Hva
 
-Nettisde som er fiktivt relatert til et spill. På denne nettsiden skal man kunne logge inn for å se og redigere brukerprofil, hvor brukeren da er linket til noen highscores som også skal kunne slettes. Det skal ha en REST API backend som er skrevet i Rust og frontenden er skrevet i react. Om vi har tid til overs skal vi begynne utvikling på nevdt spill.
+Vi skal lage en nettside som er knyttet til et spill og skal gir brukere muligheten til å logge inn for å se og redigere sin brukerprofil. Profilen er også tilknyttet highscores som brukeren kan slette. Nettstedet har en backend basert på REST API skrevet i Rust, mens frontenden er utviklet i React. Hvis vi har ekstra tid, vil vi også starte utviklingen av selve spillet.
 
 ## Hvordan
 
@@ -20,7 +20,7 @@ Vi planlegger å bruke eksisterende biblioteker for de mest komplekse delene av 
 
 For å sikre et godt resultat vil vi gjennomføre dokumenterte brukertester senere i løpet.
 
-Oppgaven stiller med mange krav, for å nå disse skal vi ha funksjonaliteter som lagring og et ledertavlesystem som sporer tid brukt på hvert nivå. I tilleg skal vi ha en nettside hvor man kan laste ned en exe fil av spillet og da logge inn på siden for å så se din egen poengsum og tid (usikkert). Denne nettsiden skal kjøre på en podman container med Nginx og en Database.
+Oppgaven stiller med mange krav, for å nå disse skal vi ha funksjonaliteter som lagring og et ledertavlesystem som sporer tid brukt på hvert nivå. I tilleg skal vi ha en nettside hvor man kan laste ned en exe fil av spillet og da logge inn på siden for å så se din egen poengsum og tid (usikkert). Denne nettsiden skal kjøre på en podman container med Nginx og en Database. 
 
 For å beskytte vårt håndverk, men fortsatt gjøre det tilgjengelig for å modifisere og endre for en selv, kommer vi til å legge verket vårt under et lisens.
 
