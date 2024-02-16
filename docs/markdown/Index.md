@@ -10,6 +10,20 @@ All dokumentasjonen er skrevet på norsk.
 
 # Innholdsbetegnelse
 
+## Navn på filer og mapper
+
+navn på filer og mapper
+
+- skrives i kebab-case
+- bare små bokstaver
+- TODO, README og dockerfiles har unntak
+
+## Språk
+
+All dokumentasjonen er skrevet på norsk
+
+All kode og kommentarer er skrevet på engelsk
+
 ## Kode
 
 Denne seksjonen beskriver følgene
@@ -22,6 +36,8 @@ Denne seksjonen beskriver følgene
 
 Vi skriver kode på samme måte for å ungå forvirring
 
+skal bare være en whitespace om gangen
+
 #### Funksjoner
 
 ```
@@ -29,3 +45,12 @@ function name() {
 	functioning
 }
 ```
+
+## Navngivnings konvensjoner
+
+Navn på:
+
+- variabler
+- funksjoner
+
+skrives i snake case. Snake case er at mellomrom er byttet ut med underscores

@@ -31,10 +31,11 @@ Vi ønsker å utvikle et engasjerende 2D-spill for å forbedre våre ferdigheter
 ## Redskaper/Programvare/Biblioteker
 
 - **Operativsystem:**
+
   - Nginx (container) - Hosting av nettside og database
   - Windows 10/11 - Utviklingsplattform
-
 - **Programvare:**
+
   - Aseprite - Grafisk design
   - bfxr - Lydeffekter
   - CMake - Bygging og kompilering
@@ -42,18 +43,19 @@ Vi ønsker å utvikle et engasjerende 2D-spill for å forbedre våre ferdigheter
   - LMMS - Lydeffekter og musikk
   - Podman - Containere
   - Visual Studio Code - IDE
-
 - **Biblioteker:**
+
   - OpenGL - Grafikk
   - SFML - Håndtering av vinduer, lyd og input
-
 - **Databasesystem**
+
   - MongoDB - Database
 
-### TODO (Forenklet)
+## TODO (Forenklet)
 
-## Spill
-- [x] Lage prosjektbeskrivelse
+### Spill
+
+- [X] Lage prosjektbeskrivelse
 - [ ] Konfigurere nødvendige verktøy
 - [ ] Fikse vindushåndtering
 - [ ] Integrere OpenGL
@@ -66,10 +68,11 @@ Vi ønsker å utvikle et engasjerende 2D-spill for å forbedre våre ferdigheter
 - [ ] Brukertesting
 - [ ] Finpusse og finalisering
 
-## Nettside
+### Nettside
+
 - [ ] Sette opp en Debian VM
 - [ ] Sette opp Podman på Debian VM
-- [ ] Konfigurere Nginx-container 
+- [ ] Konfigurere Nginx-container
   - [ ] Konfigurere database
 - [ ] Lage nettsiden
   - [ ] FAQ-side

@@ -6,6 +6,7 @@ Dokumentet er skrevet i rekkefølgen vi trenger ting
 
 ## Generelle ting for å starte utvikling
 
+## Dokumentasjon
 - [ ] Manualer og standarer for:
   - [ ] Navngivingskonvensjoner (alt utenom mapper)
   - [ ] Språk (en/no)
@@ -25,11 +26,19 @@ Dokumentet er skrevet i rekkefølgen vi trenger ting
   - [ ] Språk
   - [ ] Rammeverk
 
-- [ ] Lage alle komponentene
-
 ## Backend
-- [ ] Kubernetes
-  - [ ] Sette opp en test av Kubernetes 
+- [ ] Docker
+  - [ ] skrive ferdig dockerfiler
+  - [ ] sette opp compose fil
+    - [ ] backend
+    - [ ] frontend
+    - [ ] database
+      - [ ] mongodb-secrets
 
-- [ ] REST api
-  - [ ] Rust utv miljø
+- [ ] api
+  - [ ] sende fetch req til mongo
+  - [ ] 
+
+## Database 
+- [ ] Designe database
+  - [ ] Bestemme hvilken informasjon vi skal innkludere
