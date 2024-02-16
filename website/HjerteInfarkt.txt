@@ -1,0 +1,23 @@
+Step 1: Install Kubernetes The first step remains the same. You need to install Kubernetes on your local machine or on a cloud provider.
+
+Step 2: Create Podman Images You can build your Podman images from your Dockerfiles using the following command:
+
+podman build -t <image-name> .
+
+Replace <image-name> with a name of your choice.
+
+Step 3: Push Podman Images to a Registry After building your Podman images, you need to push them to a container registry. Here’s how you can push an image:
+
+podman push <image-name>
+
+Step 4: Create Kubernetes Deployment Configurations This step remains the same. You need to create a Deployment configuration for each of your containers.
+
+Step 5: Create Kubernetes Service Configurations This step also remains the same. You need to create a Service configuration for each Deployment.
+
+Step 6: Apply Your Configurations Finally, you can apply your configurations using kubectl. Here’s how you can apply a configuration:
+
+kubectl apply -f <configuration-file>
+
+Replace <configuration-file> with the path to your configuration file.
+
+Remember, this is a basic guide. Depending on your application, you might need to set up persistent storage, configure environment variables, handle secrets, and so on. Kubernetes has extensive documentation that can help you with these topics. Good luck! 🚀

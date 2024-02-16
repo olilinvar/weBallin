@@ -1,0 +1,16 @@
+FROM nginx:latest
+
+RUN apt-get update \
+    && apt-get install -y git \
+    && apt-get update \
+    && rm -rf /var/lib/apt/lists/*
+
+EXPOSE 80
+
+WORKDIR /usr/src/
+
+RUN git clone --depth 1 https://github.com/olilinvar/weBallin/website.git
+
+WORKDIR /website
+
+

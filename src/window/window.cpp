@@ -35,7 +35,9 @@ int main()
         {
             // "Close requested" event: close the window
             if (event.type == sf::Event::Closed)
+            {
                 window.close();
+            }
         }
 
         // Clear the window with black color
@@ -47,6 +49,5 @@ int main()
         // End the current frame
         window.display();
     }
-
     return 0;
 }

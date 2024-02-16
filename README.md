@@ -10,9 +10,7 @@ Vi ønsker å gjøre det veldig enkelt for dere å se hvem som har jobbet med hv
 
 ## Hva
 
-I tillegg til egenlaget kode vil vi være ansvarlige for det grafiske designet av alle visuelle elementer, inkludert animasjoner, sprites, karakterdesign og bakgrunnsdesign. Vi skal også skape lydeffekter og musikk for spillet.
-
-Dette skal komme med en nettside for å laste ned spillet.
+Nettisde som er fiktivt relatert til et spill. På denne nettsiden skal man kunne logge inn for å se og redigere brukerprofil, hvor brukeren da er linket til noen highscores som også skal kunne slettes. Det skal ha en REST API backend som er skrevet i Rust og frontenden er skrevet i react. Om vi har tid til overs skal vi begynne utvikling på nevdt spill.
 
 ## Hvordan
 
@@ -83,6 +81,5 @@ Utenom det vil vi også lære om containere.
 
 ## Utviklet av
 
-Dette var utviklet av:
 [Oliver](https://github.com/olilinvar)
 [Trygve](https://github.com/TheCyberiousPizzerious)
