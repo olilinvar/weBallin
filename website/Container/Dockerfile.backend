@@ -1,23 +1,30 @@
-# Use the official Rust image as the builder
 FROM rust:1.67 as builder
+# Use the Rust image
 
-# Set the working directory
-WORKDIR /usr/src/backend
+RUN apt-get update \
+    && apt-get install -y git \
+    && apt-get update \
+    && rm -rf /var/lib/apt/lists/* 
 
-# Her må det endres til noe som blir innstallert fra et klonet git repo
-COPY . .
+RUN git clone https://github.com/olilinvar/WeBallin/
 
-# Compile the application
-RUN cargo install --path .
+WORKDIR /WeBallin/website/backend/
 
-# Use a minimal Debian image for the runtime
-FROM debian:bullseye-slim
+RUN cargo build --release
+RUN rm src/*.rs && rm ./target/release/deps/backend*
 
-# Install any extra dependencies
-RUN apt-get update && apt-get install -y extra-runtime-dependencies && rm -rf /var/lib/apt/lists/*
+FROM debian:bookworm-slim
+ARG APP_NAME=backend
+ARG APP_LOCATION=/usr/src/${APP_NAME}_dir
 
-# Copy the binary from the builder
-COPY --from=builder /usr/local/cargo/bin/backend /usr/local/bin/backend
+# The EXPOSE command in the Dockerfile is more of a documentation feature that indicates which ports are intended to be exposed. However, it doesn’t actually map or open any ports.
+
+EXPOSE 80085
+
+COPY --from=builder /WeBallin/website/backend/target/release/backend ${APP_LOCATION}
+
+WORKDIR ${APP_LOCATION}
 
 # Set the startup command
-CMD ["backend"]
+CMD ["./${APP_NAME}"] 
+# .\main.rs

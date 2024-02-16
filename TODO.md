@@ -17,13 +17,19 @@ Dokumentet er skrevet i rekkefølgen vi trenger ting
 ## Nettsiden frontend
 
 - [ ] Skisse i Figma
+  - [ ] Skisse av de forskjellige komponentene
+  - [ ] Sette sammen alle komponentene i en komplett skisse av siden
+  - [ ] Minimal interaksjon og navigering så man kan se deler av logikken bak frontenden
 
 - [ ] Velge:
   - [ ] Språk
   - [ ] Rammeverk
 
+- [ ] Lage alle komponentene
+
 ## Backend
 - [ ] Kubernetes
+  - [ ] Sette opp en test av Kubernetes 
 
 - [ ] REST api
   - [ ] Rust utv miljø

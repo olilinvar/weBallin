@@ -35,10 +35,11 @@ Utenom det vil vi også lære om containere.
 <!-- a b c d e f g h i j k l m n o p q r s t u v w x y z -->
 
 - **Operativsystem:**
+
   - Nginx (container) - Hosting av nettside og database
   - Windows 10/11 - Utviklingsplattform
-
 - **Programvare:**
+
   - Aseprite - Grafisk design
   - bfxr - Lydeffekter
   - CMake - Bygging og kompilering
@@ -46,19 +47,21 @@ Utenom det vil vi også lære om containere.
   - LMMS - Lydeffekter og musikk
   - Podman - Containere
   - Visual Studio Code - IDE
-
 - **Biblioteker:**
+
   - OpenGL - Grafikk
   - SFML - Håndtering av vinduer, lyd og input
-
 - **Databasesystem**
+
   - MongoDB - Database
 
 <!--Dette trenger vi ikke gjøre veldig detaljert, men kan utvides-->
 
 ### TODO (Forenklet)
+
 ## Spill
-- [x] Lage prosjektbeskrivelse
+
+- [X] Lage prosjektbeskrivelse
 - [ ] Konfigurere nødvendige verktøy
 - [ ] Fikse vindushåndtering
 - [ ] Integrere OpenGL
@@ -72,9 +75,10 @@ Utenom det vil vi også lære om containere.
 - [ ] Finpusse og finalisering
 
 ## Nettside
+
 - [ ] Sette opp en Debian VM
 - [ ] Sette opp Podman på Debian VM
-- [ ] Konfigurere Nginx-container 
+- [ ] Konfigurere Nginx-container
   - [ ] Konfigurere database
 - [ ] Lage nettsiden
   - [ ] FAQ-side

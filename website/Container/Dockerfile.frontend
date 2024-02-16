@@ -1,16 +1,21 @@
 FROM nginx:latest
 
+ARG ENVIRONMENT
+
 RUN apt-get update \
-    && apt-get install -y git \
-    && apt-get update \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get install -y git npm\
+    && rm -rf /var/lib/apt/lists/* 
+# needs a npm i, and change dir to website dir
+EXPOSE 8080
 
-EXPOSE 80
+RUN git clone https://github.com/olilinvar/weBallin/.git \
 
-WORKDIR /usr/src/
+WORKDIR /WeBallin/website/frontend/
 
-RUN git clone --depth 1 https://github.com/olilinvar/weBallin/website.git
+RUN npm i
 
-WORKDIR /website
+# COPY code_to_copy/ /where_to_copy_it/
 
 
+# Shit to run essentially to start the container
+CMD ["frontend"]

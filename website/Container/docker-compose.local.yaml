@@ -1,0 +1,35 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: website/container/dockerfile.backend
+
+    ports: 
+    #maps host machine port (left) to container port (right)
+      - "8080:8080"
+    networks:
+      - container_network
+
+
+  frontend:
+    build:
+      context: .
+      dockerfile: website/container/dockerfile.frontend
+
+    networks:
+      - container_network
+
+  database:
+    context: .
+    dockerfile: website/container/dockerfile.database
+    
+    ports:
+      - "27017:27017"
+
+    networks:
+      - container_network
+
+networks:
+  container_network:
+    driver: bridge
