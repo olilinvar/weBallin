@@ -1,10 +1,5 @@
 use actix_web::{get, App, HttpServer, Responder};
 
-fn main() {
-    println!("JEG LEVER!")
-}
-
-
 #[get("/")]
 async fn hello() -> impl Responder {
     "Hello, Actix web!"
