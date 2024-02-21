@@ -1,12 +1,14 @@
 FROM nginx:latest
 
-ARG ENVIRONMENT
+LABEL maintainer="dont@contact.please"
+
+#ARG APP_LOCATION=/usr/src/frontend
 
 RUN apt-get update \
     && apt-get install -y git npm\
     && rm -rf /var/lib/apt/lists/* 
-# needs a npm i, and change dir to website dir
-EXPOSE 8080
+
+#WORKDIR ${APP_LOCATION}
 
 RUN git clone https://github.com/olilinvar/weBallin/.git \
 
@@ -14,8 +16,6 @@ WORKDIR /WeBallin/website/frontend/
 
 RUN npm i
 
-# COPY code_to_copy/ /where_to_copy_it/
-
-
+EXPOSE 8080
 # Shit to run essentially to start the container
-CMD ["frontend"]
+#CMD ["frontend"]

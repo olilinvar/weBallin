@@ -2,34 +2,46 @@ version: '3'
 services:
   backend:
     build:
-      context: .
-      dockerfile: website/container/dockerfile.backend
-
-    ports: 
-    #maps host machine port (left) to container port (right)
-      - "8080:8080"
+      dockerfile: dockerfile.backend
+    ports:
+      - "8080:7175"
     networks:
-      - container_network
+      - container-network
 
-
-  frontend:
-    build:
-      context: .
-      dockerfile: website/container/dockerfile.frontend
-
-    networks:
-      - container_network
+#  frontend:
+#    build:
+#      context: .
+#      dockerfile: dockerfile.frontend
+#    networks:
+#      - container_network
 
   database:
-    context: .
-    dockerfile: website/container/dockerfile.database
-    
+    image: mongo:latest
+    #hostname: mongo
+    container_name: heltmongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=changeme # MONGODB_INITDB_ROOT_PASSWORD_FILE=/run/secrets/mongodb-root-pw
     ports:
       - "27017:27017"
-
     networks:
-      - container_network
+      - container-network
+    volumes:
+      - mongodb-data:/data/db
+
+volumes:
+  mongodb-data:
 
 networks:
-  container_network:
+  container-network:
     driver: bridge
+
+
+#MongoDB          Traditional SQL
+#Database         Database
+#Collection       Table
+#Document         Row
+#$lookup          Join
+#Index            Index
+#ACID Transaction ACID transaction
+#Single Machine   Multiple Nodes

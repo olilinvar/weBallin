@@ -1,5 +1,7 @@
-FROM rust:1.67 as builder
+FROM rust:latest as builder
 # Use the Rust image
+
+LABEL maintainer="dont@contact.please"
 
 RUN apt-get update \
     && apt-get install -y git \
@@ -13,18 +15,19 @@ WORKDIR /WeBallin/website/backend/
 RUN cargo build --release
 RUN rm src/*.rs && rm ./target/release/deps/backend*
 
-FROM debian:bookworm-slim
+FROM debian:bookworm
+
 ARG APP_NAME=backend
-ARG APP_LOCATION=/usr/src/${APP_NAME}_dir
+ARG APP_LOCATION=usr/src/
 
-# The EXPOSE command in the Dockerfile is more of a documentation feature that indicates which ports are intended to be exposed. However, it doesn’t actually map or open any ports.
+# There might not be a need for mapping the port because the rust does already
+# This needs to match the port on in the rust file
+#EXPOSE 7175
+#EXPOSE 8080
 
-EXPOSE 80085
+COPY --from=builder /WeBallin/website/backend/target/release/backend /${APP_LOCATION}
 
-COPY --from=builder /WeBallin/website/backend/target/release/backend ${APP_LOCATION}
+WORKDIR /${APP_LOCATION}
 
-WORKDIR ${APP_LOCATION}
-
-# Set the startup command
-CMD ["./${APP_NAME}"] 
-# .\main.rs
+CMD ./backend
+# .\backend binary
