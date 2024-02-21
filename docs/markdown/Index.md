@@ -10,7 +10,7 @@ All dokumentasjonen er skrevet på norsk.
 
 # Innholdsbetegnelse
 
-## Navn på filer og mapper
+## Konvensjoner
 
 navn på filer og mapper
 

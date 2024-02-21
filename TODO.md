@@ -27,6 +27,7 @@ Dokumentet er skrevet i rekkefølgen vi trenger ting
   - [ ] Rammeverk
 
 ## Backend
+sende og motta fra mongo 
 - [ ] Docker
   - [ ] skrive ferdig dockerfiler
   - [ ] sette opp compose fil
@@ -42,3 +43,5 @@ Dokumentet er skrevet i rekkefølgen vi trenger ting
 ## Database 
 - [ ] Designe database
   - [ ] Bestemme hvilken informasjon vi skal innkludere
+
+  mongo sette opp og overføre til compose
