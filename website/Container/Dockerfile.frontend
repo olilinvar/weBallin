@@ -4,18 +4,14 @@ LABEL maintainer="dont@contact.please"
 
 #ARG APP_LOCATION=/usr/src/frontend
 
-RUN apt-get update \
-    && apt-get install -y git npm\
-    && rm -rf /var/lib/apt/lists/* 
+RUN git clone https://github.com/olilinvar/weBallin/.git 
 
-#WORKDIR ${APP_LOCATION}
+WORKDIR /usr/share/nginx/html/
 
-RUN git clone https://github.com/olilinvar/weBallin/.git \
-
-WORKDIR /WeBallin/website/frontend/
-
-RUN npm i
+RUN rm * \
+    && cp -r /weballin/website/frontend/. . \
+    && rm -rf /weBallin
 
 EXPOSE 8080
-# Shit to run essentially to start the container
+
 #CMD ["frontend"]

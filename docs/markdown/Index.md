@@ -10,6 +10,10 @@ All dokumentasjonen er skrevet på norsk.
 
 # Innholdsbetegnelse
 
+## redskaper
+
+podman-desktop
+
 ## Konvensjoner
 
 navn på filer og mapper
