@@ -5,7 +5,7 @@ LABEL maintainer="dont@contact.please"
 #ARG APP_LOCATION=/usr/src/frontend
 
 RUN apt-get update \
-    #&& apt-get upgrade \
+    && apt-get upgrade \
     && apt-get install -y git \
     && git clone https://github.com/olilinvar/weBallin/ \
     && rm -rf /var/lib/apt/lists/*
@@ -13,7 +13,7 @@ RUN apt-get update \
 WORKDIR /usr/share/nginx/html/
 
 RUN rm * \
-    && cp -r /weballin/website/frontend/. . \
+    && cp -r /weBallin/website/frontend/ . \
     && rm -rf /weBallin
 
 EXPOSE 8080

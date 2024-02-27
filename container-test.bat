@@ -49,7 +49,9 @@ echo "<----DELETED---->"
 
 echo "<----BUILDING IMAGES---->"
 podman build -t backend-image -f website/container/dockerfile.backend --log-level=debug
-podman build -t backend-image -f website/container/dockerfile.frontend --log-level=debug
+podman build -t frontend-image -f website/container/dockerfile.frontend --log-level=debug
+
+::podman image prune -a -f
 echo "<----IMAGES BUILT---->"
 podman images
 
