@@ -8,12 +8,14 @@ echo "|         choose what dockerfile you wanna run?           |"
 echo "|                                                         |"
 echo "|  [front]: this builds and runs the frontend dockerfile  |"
 echo "|  [back]:  this builds and runs the backend dockerfile   |"
+echo "|  [all]:   this build all images usefull for composeing  |"
 echo "|---------------------------------------------------------|"
-set /p dockerfile="choose (front or back): "
+set /p dockerfile="choose (front or back or all): "
 
 if %dockerfile%==front goto front
 if %dockerfile%==back goto back
-echo "%dockerfile%" is not a valid option. Try again
+if %dockerfile%==all goto all
+echo %dockerfile% is not a valid option. Try again
 goto options 
 
 :front
@@ -37,8 +39,19 @@ echo "<----RUNNING CONTAINER---->"
 ::The problem might be that the container uses both ipv- 4 and 6. There might be some conflict so if you could set what you wanna use the problem might be gone
 podman run -p 8080:8080 backend-image
 echo "<----CONTAINER IS RUNNING---->"
+goto end
 
-podman ps
+:all
+echo "<----DELETING IMAGES---->"
+podman image rm backend-image
+podman image rm frontend-image
+echo "<----DELETED---->"
+
+echo "<----BUILDING IMAGES---->"
+podman build -t backend-image -f website/container/dockerfile.backend --log-level=debug
+podman build -t backend-image -f website/container/dockerfile.frontend --log-level=debug
+echo "<----IMAGES BUILT---->"
+podman images
 
 goto end
 :end

@@ -39,6 +39,7 @@ networks:
   frontback-network:
     driver: bridge
 
+# Mongo vs trad consepts
 
 #MongoDB          Traditional SQL
 #Database         Database

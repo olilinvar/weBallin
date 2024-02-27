@@ -5,7 +5,7 @@ LABEL maintainer="dont@contact.please"
 
 RUN apt-get update \
     && apt-get install -y git \
-    && apt-get update \
+    #&& apt-get upgrade \
     && rm -rf /var/lib/apt/lists/* 
 
 RUN git clone https://github.com/olilinvar/WeBallin/
