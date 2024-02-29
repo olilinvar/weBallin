@@ -16,7 +16,7 @@ pub async fn create_user(db: Data<MongoRepo>, new_user: Json<User>) -> HttpRespo
     }
 }
 
-#[get("/user/{id}")]
+#[get("/user/{id}")] // get user
 pub async fn get_user(db: Data<MongoRepo>, path: Path<String>) -> HttpResponse {
     let id = path.into_inner();
     if id.is_empty() {
@@ -29,3 +29,6 @@ pub async fn get_user(db: Data<MongoRepo>, path: Path<String>) -> HttpResponse {
         Err(err) => HttpResponse::InternalServerError().body(err.to_string()),
     }
 }
+
+#[put("/user/{id}")] // edit user
+pub async fn update_user()
