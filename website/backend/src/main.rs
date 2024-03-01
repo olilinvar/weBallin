@@ -20,6 +20,9 @@ async fn main() -> std::io::Result<()> {
         .app_data(db_data.clone())
         .service(create_user)
         .service(get_user)
+        .service(update_user)
+        .service(delete_user)
+        .service(get_all_users)
         .service(hello)
     })
         .bind("0.0.0.0:8080")?

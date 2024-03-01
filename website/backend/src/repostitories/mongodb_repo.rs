@@ -74,4 +74,14 @@ impl MongoRepo {
             .expect("Error updating user");
         Ok(updated_doc)
     }
+    pub fn delete_user(&self, id: &String) -> Result<DeleteResult, Error> {
+        let obj_id = ObjectId::parse_str(id).unwrap();
+        let filter = doc! {"_id": obj_id};
+        let user_detail = self
+            .col
+            .delete_one(filter, None)
+            .ok()
+            .expect("Error deleting user");
+        Ok(user_detail)
+    }
 }
