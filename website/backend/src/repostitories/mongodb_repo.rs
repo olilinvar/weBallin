@@ -85,3 +85,4 @@ impl MongoRepo {
         Ok(user_detail)
     }
 }
+
