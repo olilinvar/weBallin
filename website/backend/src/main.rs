@@ -2,7 +2,7 @@ mod api;
 mod models;
 mod repository;
 
-use actix_web::{get, App, HttpServer, Responder, HttpResponse};
+use actix_web::{get, App, HttpServer, Responder, HttpResponse, Data};
 use api::user_api::{create_user, get_user};
 use repository::mongodb_repo::MongoRepo;
 

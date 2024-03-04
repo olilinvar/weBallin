@@ -1,5 +1,5 @@
 use crate::{models::user_model::User, repository::mongodb_repo::MongoRepo};
-use actix_web::{post, web::{Data, Json}, HttpResponse};    
+use actix_web::{get, post, put, delete, web::{Data, Json, Path}, HttpResponse};    
 
 #[post("/user")] // Should be changed to create user
 pub async fn create_user(db: Data<MongoRepo>, new_user: Json<User>) -> HttpResponse {

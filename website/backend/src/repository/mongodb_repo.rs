@@ -4,7 +4,7 @@ use dotenv::dotenv;
     
 use mongodb::{
     bson::{extjson::de::Error, oid::ObjectId, doc},
-    results::{ InsertOneResult},
+    results::{UpdateResult, InsertOneResult, DeleteResult},
     sync::{Client, Collection},
 };
 use crate::models::user_model::User;    
