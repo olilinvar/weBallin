@@ -2,8 +2,8 @@ mod api;
 mod models;
 mod repository;
 
-use actix_web::{get, App, HttpServer, Responder, HttpResponse, Data};
-use api::user_api::{create_user, get_user};
+use actix_web::{get, App, HttpServer, Responder, HttpResponse, web::{Data}};
+use api::user_api::{create_user, get_user, update_user, delete_user, get_all_users};
 use repository::mongodb_repo::MongoRepo;
 
 #[get("/")]
