@@ -1,13 +1,13 @@
 services:
-#  backend:
-#    container_name: backend
-#    build:
-#      dockerfile: website/container/dockerfile.backend
-#    ports:
-#      - "8080:7175"
-#    networks:
-#      - frontback-network
-#      - mongodb_network
+  backend:
+    container_name: backend
+    build:
+      dockerfile: website/container/dockerfile.backend
+    ports:
+      - "8080:7175"
+    networks:
+      - frontback-network
+      - mongodb_network
 #
 #  frontend:
 #    container_name: frontend
