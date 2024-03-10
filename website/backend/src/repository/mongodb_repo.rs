@@ -8,7 +8,7 @@ use mongodb::{
     results::{UpdateResult, InsertOneResult, DeleteResult},
     sync::{Client, Collection},
 };
-use crate::models::user_model::User;    
+use crate::models::user_model::User; //Crate also starts at the root dir something something
 
 pub struct MongoRepo {
     col: Collection<User>,
@@ -23,8 +23,8 @@ impl MongoRepo {
         };
 
         let client = Client::with_uri_str(uri).unwrap();
-        let db = client.database("rustDB");
-        let col: Collection<User> = db.collection("User");
+        let db = client.database("user-storage");
+        let col: Collection<User> = db.collection("gaming");
 
         MongoRepo { col }
     }        
@@ -32,9 +32,8 @@ impl MongoRepo {
     pub fn create_user(&self, new_user: User) -> Result<InsertOneResult, Error> {
         let new_doc = User {
             id: None,
-            name: new_user.name,
-            location: new_user.location,
-            title: new_user.title,
+            username: new_user.username,
+            password: new_user.password,
         };
 
         let user = self
@@ -60,12 +59,11 @@ impl MongoRepo {
         let obj_id = ObjectId::parse_str(id).unwrap();
         let filter = doc! {"_id": obj_id};
         let new_doc = doc! {
-            "$set":
+            "$set": //mongo update operator
                 {
                     "id": new_user.id,
-                    "name": new_user.name,
-                    "location": new_user.location,
-                    "title": new_user.title
+                    "username": new_user.username,
+                    "password": new_user.password,
                 },
         };
         let updated_doc = self

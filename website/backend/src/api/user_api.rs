@@ -6,9 +6,8 @@ use mongodb::bson::oid::ObjectId;
 pub async fn create_user(db: Data<MongoRepo>, new_user: Json<User>) -> HttpResponse {
     let data = User {
         id: None,
-        name: new_user.name.to_owned(),
-        location: new_user.location.to_owned(),
-        title: new_user.title.to_owned(),
+        username: new_user.username.to_owned(),
+        password: new_user.password.to_owned(),
     };
     let user_detail = db.create_user(data);
     match user_detail {
@@ -39,9 +38,8 @@ pub async fn update_user(db: Data<MongoRepo>, path: Path<String>, new_user: Json
     };
     let data = User {
         id: Some(ObjectId::parse_str(&id).unwrap()),
-        name: new_user.name.to_owned(),
-        location: new_user.location.to_owned(),
-        title: new_user.title.to_owned(),
+        username: new_user.username.to_owned(),
+        password: new_user.password.to_owned(),
     };
     let update_result = db.update_user(&id, data);
     match update_result {

@@ -7,7 +7,7 @@ services:
       - "8080:7175"
     networks:
       - frontback-network
-      - mongodb_network
+      - mongodb-network
 #
 #  frontend:
 #    container_name: frontend
@@ -26,11 +26,11 @@ services:
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
       - mongodb-data:/data/db
     networks:
-      - mongodb_network
+      - mongodb-network
     ports:
       - 27017:27017
     healthcheck:
-      test: echo 'db.runCommand("ping").ok' | mongo 10.10.10.60:27017/test --quiet
+      test: echo 'db.runCommand("ping").ok' | mongo localhost:27017/test --quiet
       interval: 30s
       timeout: 10s
       retries: 3
@@ -46,12 +46,12 @@ services:
       - ME_CONFIG_MONGODB_ADMINPASSWORD=pass12345
       - ME_CONFIG_BASICAUTH_USERNAME=admin
       - ME_CONFIG_BASICAUTH_PASSWORD=admin123
-    volumes:
-      - mongodb-data:/data/db
+    #volumes:
+    #  - mongodb-data:/data/db
     depends_on:
       - mongodb
     networks:
-      - mongodb_network
+      - mongodb-network
     ports:
       - 8081:8081
     healthcheck:
@@ -67,6 +67,6 @@ volumes:
 
 networks:
   mongodb_network:
-    name: mongodb_network
+    name: mongodb-network
   frontback-network:
     name: frontback-network

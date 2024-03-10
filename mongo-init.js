@@ -1,6 +1,7 @@
 db = db.getSiblingDB('user-storage'); //schizoid-gpt
 
-db.createCollection('gaming')
+db.createCollection('users')
+db.createCollection('highscores')
 
 db.createUser({
   user: 'user',
