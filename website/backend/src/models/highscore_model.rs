@@ -12,6 +12,7 @@ pub struct Highscore {
     pub level_times: HashMap<u8, u32>,
 }
 
+// Needs to be moved and removed
 impl Highscore {
     pub fn cal_total_score(&mut self) {
         self.total_score = self.level_scores.values().sum();

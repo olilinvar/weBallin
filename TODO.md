@@ -7,6 +7,9 @@ Dokumentet er skrevet i rekkefølgen vi trenger ting
 ## Generelle ting for å starte utvikling
 
 ## Dokumentasjon
+- [ ] Gjøre ferdig superdoc
+- [ ] Skrive ferdig TODO
+
 - [ ] Manualer og standarer for:
   - [ ] Navngivingskonvensjoner (alt utenom mapper)
   - [ ] Språk (en/no)
