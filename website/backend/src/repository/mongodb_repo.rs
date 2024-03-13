@@ -1,5 +1,5 @@
 use std::env;
-//extern crate dotenv; // only needed if a macro is, might not be needed actually
+extern crate dotenv; // only needed if a macro is, might not be needed actually
 //extern crate is old does the job of .toml
 use dotenv::dotenv;    
     
