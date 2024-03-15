@@ -9,7 +9,10 @@ Dokumentet er skrevet i rekkefølgen vi trenger ting
 
 ## Større bilde
 
-### Dokumentasjon
+## Dokumentasjon
+- [ ] Gjøre ferdig superdoc
+- [ ] Skrive ferdig TODO
+
 - [ ] Manualer og standarer for:
   - [ ] Navngivingskonvensjoner (alt utenom mapper)
   - [ ] Språk (en/no)

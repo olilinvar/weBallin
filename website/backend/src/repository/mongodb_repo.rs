@@ -1,5 +1,5 @@
 use std::env;
-//extern crate dotenv; // only needed if a macro is, might not be needed actually
+extern crate dotenv; // only needed if a macro is, might not be needed actually
 //extern crate is old does the job of .toml
 use dotenv::dotenv;    
     
@@ -11,7 +11,7 @@ use mongodb::{
 use crate::models::user_model::User; //Crate also starts at the root dir something something
 
 pub struct MongoRepo {
-    col: Collection<User>,
+    col: Collection<User>, // This makes is so that it can take any type
 }    
     
 impl MongoRepo {
@@ -24,7 +24,7 @@ impl MongoRepo {
 
         let client = Client::with_uri_str(uri).unwrap();
         let db = client.database("user-storage");
-        let col: Collection<User> = db.collection("gaming");
+        let col: Collection<User> = db.collection("users");
 
         MongoRepo { col }
     }        
