@@ -66,7 +66,7 @@ volumes:
     name: mongodb-data
 
 networks:
-  mongodb_network:
+  mongodb-network:
     name: mongodb-network
   frontback-network:
     name: frontback-network

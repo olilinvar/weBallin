@@ -3,10 +3,13 @@
 Jeg kjenner at jeg må ha en oversikt som ikke er på Github for den gjør meg litt gal trenger en statisk over sikt som dette da er :)
 
 Dokumentet er skrevet i rekkefølgen vi trenger ting
+## Løpende
+- [ ] Splitte mongorepo til user og highscore
+  - [ ] lage en trait for init() function
 
-## Generelle ting for å starte utvikling
+## Større bilde
 
-## Dokumentasjon
+### Dokumentasjon
 - [ ] Manualer og standarer for:
   - [ ] Navngivingskonvensjoner (alt utenom mapper)
   - [ ] Språk (en/no)
@@ -15,7 +18,7 @@ Dokumentet er skrevet i rekkefølgen vi trenger ting
     - [ ]  Mappestruktur
     - [ ]  Mappenavn
 
-## Nettsiden frontend
+### Nettsiden frontend
 
 - [ ] Skisse i Figma
   - [ ] Skisse av de forskjellige komponentene
@@ -26,7 +29,7 @@ Dokumentet er skrevet i rekkefølgen vi trenger ting
   - [ ] Språk
   - [ ] Rammeverk
 
-## Backend
+### Backend
 sende og motta fra mongo 
 - [ ] Docker
   - [ ] skrive ferdig dockerfiler
@@ -40,7 +43,7 @@ sende og motta fra mongo
   - [ ] sende fetch req til mongo
   - [ ] 
 
-## Database 
+### Database 
 - [ ] Designe database
   - [ ] Bestemme hvilken informasjon vi skal innkludere
 
