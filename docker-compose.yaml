@@ -8,11 +8,13 @@ services:
     networks:
       - frontback-network
       - mongodb-network
-#
+
 #  frontend:
 #    container_name: frontend
 #    build:
 #      dockerfile: website/container/dockerfile.frontend
+#    ports:
+#      - "8081:8081"
 #    networks:
 #      - frontback-network
       
