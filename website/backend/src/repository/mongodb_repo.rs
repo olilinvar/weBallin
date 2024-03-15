@@ -21,6 +21,7 @@ impl MongoRepo {
             Ok(value) => value.to_string(),
             Err(_) => format!("Error loading env variable"),
         };
+        println!("URI: {}", uri)
 
         let client = Client::with_uri_str(uri).unwrap();
         let db = client.database("user-storage");
